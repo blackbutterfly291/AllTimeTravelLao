@@ -451,9 +451,31 @@ main{
 
 .profile-wrap{
   display: grid;
-  grid-template-columns: 1.4fr .6fr;
+  grid-template-columns: 1fr;
   gap: 22px;
   align-items: start;
+}
+
+.profile-wrap .company-hero-logo{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center top;
+  justify-self: stretch;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Company profile page: letter + badges side by side (text left, highlights right) */
+.panel[aria-label="Company profile content"] .profile-wrap{
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: 22px 24px;
+  align-items: start;
+}
+
+.panel[aria-label="Company profile content"] .profile-wrap .profile-text{
+  min-width: 0;
 }
 
 .profile-text p{
@@ -461,6 +483,10 @@ main{
   color: var(--muted);
   font-size: 15.5px;
   line-height: 1.75;
+}
+
+.profile-text p + p{
+  margin-top: 1.5rem;
 }
 
 .badge-list{
@@ -736,7 +762,9 @@ footer{
   .hero-inner{ padding: 16px 16px 20px; }
   .stats{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .services-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .profile-wrap{ grid-template-columns: 1fr; }
+  .panel[aria-label="Company profile content"] .profile-wrap{
+    grid-template-columns: 1fr;
+  }
   .contact-grid{ grid-template-columns: 1fr; }
   .destination-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .section-title{
