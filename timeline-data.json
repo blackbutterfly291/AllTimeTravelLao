@@ -1,0 +1,52 @@
+[
+  {
+    "year": "2015",
+    "image": "https://picsum.photos/id/20/700/450",
+    "description": "🚀 Founded in San Francisco with $1.2M seed round. Core mission: AI-driven analytics for enterprises."
+  },
+  {
+    "year": "2016",
+    "image": "https://picsum.photos/id/26/700/450",
+    "description": "📊 Launched 'Nexus Core' platform. First 600+ customers, recognized as top emerging vendor."
+  },
+  {
+    "year": "2017",
+    "image": "https://picsum.photos/id/0/700/450",
+    "description": "🌍 Opened EMEA HQ in Berlin & APAC in Singapore. Headcount reaches 200."
+  },
+  {
+    "year": "2018",
+    "image": "https://picsum.photos/id/42/700/450",
+    "description": "💰 Series B: $78M. Launched predictive AI engine. Clients: 1,800+ enterprises."
+  },
+  {
+    "year": "2019",
+    "image": "https://picsum.photos/id/91/700/450",
+    "description": "🏆 Winner 'Best Analytics Suite'. Expanded to LATAM, 4,200 customers worldwide."
+  },
+  {
+    "year": "2020",
+    "image": "https://picsum.photos/id/24/700/450",
+    "description": "🤝 Strategic acquisition of 'DataFusion'. Strengthened real-time analytics."
+  },
+  {
+    "year": "2021",
+    "image": "https://picsum.photos/id/29/700/450",
+    "description": "🌱 Carbon-neutral certified. Launched ESG analytics module, adopted by Fortune 500."
+  },
+  {
+    "year": "2022",
+    "image": "https://picsum.photos/id/155/700/450",
+    "description": "📈 ARR hits $340M. Ranked #22 Forbes Cloud 100. New offices in Toronto & Dubai."
+  },
+  {
+    "year": "2023",
+    "image": "https://picsum.photos/id/96/700/450",
+    "description": "🧠 'Cortex AI' generative assistant launched. Over 2,500 enterprises adopt."
+  },
+  {
+    "year": "2024",
+    "image": "https://picsum.photos/id/106/700/450",
+    "description": "✨ NYSE debut (ticker: NEXAI). 7,200+ clients, pioneering spatial intelligence."
+  }
+]
