@@ -745,7 +745,7 @@ footer{
 }
 
 /* Portlife timeline — vertical on mobile, horizontal row on desktop */
-#business-success-story .profile-text + .portlife-root{
+#business-success-journey .profile-text + .portlife-root{
   margin-top: 1.75rem;
 }
 
@@ -898,7 +898,7 @@ footer{
 
 /* ——— Desktop: horizontal scrolling timeline ——— */
 @media (min-width: 901px){
-  #business-success-story .portlife-root{
+  #business-success-journey .portlife-root{
     overflow-x: auto;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
@@ -907,7 +907,7 @@ footer{
     padding-bottom: 4px;
   }
 
-  #business-success-story .portlife-track{
+  #business-success-journey .portlife-track{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -920,7 +920,7 @@ footer{
     scroll-snap-type: x proximity;
   }
 
-  #business-success-story .portlife-track::before{
+  #business-success-journey .portlife-track::before{
     left: 0;
     right: auto;
     top: 28px;
@@ -931,7 +931,7 @@ footer{
     background: linear-gradient(90deg, rgba(35,135,255,.38), rgba(99,201,255,.58), rgba(35,135,255,.38));
   }
 
-  #business-success-story .portlife-item{
+  #business-success-journey .portlife-item{
     flex: 0 0 clamp(240px, 22vw, 300px);
     width: clamp(240px, 22vw, 300px);
     max-width: 300px;
@@ -940,17 +940,17 @@ footer{
     scroll-snap-align: start;
   }
 
-  #business-success-story .portlife-node{
+  #business-success-journey .portlife-node{
     left: 50%;
     top: 19px;
     transform: translate(-50%, -50%);
   }
 
-  #business-success-story .portlife-card{
+  #business-success-journey .portlife-card{
     margin-top: 38px;
   }
 
-  #business-success-story .portlife-media img{
+  #business-success-journey .portlife-media img{
     aspect-ratio: 700 / 450;
     max-height: none;
   }
