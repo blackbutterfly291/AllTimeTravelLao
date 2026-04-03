@@ -866,6 +866,9 @@ footer{
   margin: 0;
   padding: 14px 16px 10px;
   line-height: 1.12;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .portlife-desc{
