@@ -826,52 +826,45 @@ footer{
   min-width: 0;
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 10px 26px rgba(20,42,86,.12);
   width: 100%;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: clamp(12px, 3vw, 16px) clamp(16px, 4vw, 22px) clamp(16px, 3.5vw, 22px);
+  text-align: left;
 }
 
 .portlife-media{
   margin: 0;
   padding: 0;
-  width: min(168px, 58vw);
-  max-width: 100%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
   background: #e8f2ff;
-  flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,.92);
-  box-shadow: 0 6px 18px rgba(20,42,86,.14), inset 0 0 0 1px rgba(35,135,255,.12);
 }
 
 .portlife-media img{
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   display: block;
+  max-height: min(58vw, 320px);
 }
 
 .portlife-body{
-  padding: clamp(10px, 2vw, 12px) 4px 0;
+  padding: 14px 16px 18px;
   width: 100%;
   min-width: 0;
 }
 
 .portlife-year{
   font-weight: 800;
-  font-size: clamp(11px, 1.8vw, 12.5px);
-  letter-spacing: .12em;
+  font-size: clamp(15px, 3vw, 20px);
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--brand);
-  margin: 0 0 6px;
+  margin: 0 0 8px;
+  line-height: 1.15;
 }
 
 .portlife-desc{
@@ -904,12 +897,8 @@ footer{
     top: 20px;
   }
 
-  .portlife-media{
-    width: min(140px, 50vw);
-  }
-
   .portlife-body{
-    padding: 10px 2px 0;
+    padding: 12px 12px 14px;
   }
 }
 
@@ -967,8 +956,13 @@ footer{
     margin-top: 38px;
   }
 
-  #business-success-journey .portlife-media{
-    width: min(152px, 42vw);
+  #business-success-journey .portlife-media img{
+    aspect-ratio: 700 / 450;
+    max-height: none;
+  }
+
+  #business-success-journey .portlife-year{
+    font-size: 20px;
   }
 
   .portlife-desc{
