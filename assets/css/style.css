@@ -859,12 +859,12 @@ footer{
 
 .portlife-year{
   font-weight: 800;
-  font-size: clamp(15px, 3vw, 20px);
-  letter-spacing: .1em;
+  font-size: clamp(20px, 5.5vw, 30px);
+  letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--brand);
-  margin: 0 0 8px;
-  line-height: 1.15;
+  margin: 0 0 10px;
+  line-height: 1.12;
 }
 
 .portlife-desc{
@@ -962,7 +962,7 @@ footer{
   }
 
   #business-success-journey .portlife-year{
-    font-size: 20px;
+    font-size: clamp(22px, 2.4vw, 30px);
   }
 
   .portlife-desc{
