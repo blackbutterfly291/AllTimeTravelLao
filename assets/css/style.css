@@ -760,6 +760,14 @@ footer{
   outline: none;
 }
 
+.company-gallery img.company-gallery-img--full{
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: auto;
+  max-width: min(480px, 92%);
+  height: auto;
+}
+
 .company-gallery img:hover{
   transform: translateY(-3px);
   box-shadow: 0 20px 36px rgba(20,42,86,.22);
