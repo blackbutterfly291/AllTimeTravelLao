@@ -761,11 +761,16 @@ footer{
 }
 
 .company-gallery img.company-gallery-img--full{
-  grid-column: 1 / -1;
   justify-self: center;
   width: auto;
   max-width: min(480px, 92%);
   height: auto;
+}
+
+.company-gallery img.company-gallery-img--match-height{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .company-gallery img:hover{
