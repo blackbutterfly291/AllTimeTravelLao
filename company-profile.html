@@ -317,7 +317,7 @@
                 <div class="portlife-year">2018</div>
                 <figure class="portlife-media">
                   <img
-                    src="assets/img/awards/1.jpg"
+                    src="assets/img/awards/2018.png"
                     alt="Award recognition — 2018 milestone"
                     width="700"
                     height="450"
@@ -342,7 +342,7 @@
                 <div class="portlife-year">2020</div>
                 <figure class="portlife-media">
                   <img
-                    src="assets/img/awards/2.jpg"
+                    src="assets/img/awards/2021.png"
                     alt="Award recognition — 2020 milestone"
                     width="700"
                     height="450"
@@ -363,7 +363,7 @@
                 <div class="portlife-year">2022</div>
                 <figure class="portlife-media">
                   <img
-                    src="assets/img/awards/3.jpg"
+                    src="assets/img/awards/2023%20V1.png"
                     alt="Award recognition — 2022 milestone"
                     width="700"
                     height="450"
@@ -388,7 +388,7 @@
                 <div class="portlife-year">2024</div>
                 <figure class="portlife-media">
                   <img
-                    src="assets/img/awards/4.jpg"
+                    src="assets/img/awards/2024.png"
                     alt="Award recognition — 2024 milestone"
                     width="700"
                     height="450"
@@ -414,31 +414,136 @@
       </div>
 
       <section class="award-gallery" aria-label="Travel agency award photos">
-        <img
-          src="assets/img/awards/1.jpg"
-          alt="All Time Travel award photo 1"
-          loading="lazy"
-          decoding="async"
-        />
-        <img
-          src="assets/img/awards/2.jpg"
-          alt="All Time Travel award photo 2"
-          loading="lazy"
-          decoding="async"
-        />
-        <img
-          src="assets/img/awards/3.jpg"
-          alt="All Time Travel award photo 3"
-          loading="lazy"
-          decoding="async"
-        />
-        <img
-          src="assets/img/awards/4.jpg"
-          alt="All Time Travel award photo 4"
-          loading="lazy"
-          decoding="async"
-        />
+        <button type="button" class="award-thumb" aria-label="View full size: award recognition 2015">
+          <img
+            src="assets/img/awards/2015.png"
+            alt="All Time Travel — award recognition 2015"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: award recognition 2016">
+          <img
+            src="assets/img/awards/2016.png"
+            alt="All Time Travel — award recognition 2016"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: award recognition 2018">
+          <img
+            src="assets/img/awards/2018.png"
+            alt="All Time Travel — award recognition 2018"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: international award recognition 2019">
+          <img
+            src="assets/img/awards/2019%20International.png"
+            alt="All Time Travel — international award recognition 2019"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: local award recognition 2019">
+          <img
+            src="assets/img/awards/2019%20Local.png"
+            alt="All Time Travel — local award recognition 2019"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: award recognition 2021">
+          <img
+            src="assets/img/awards/2021.png"
+            alt="All Time Travel — award recognition 2021"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: award recognition 2023">
+          <img
+            src="assets/img/awards/2023%20V1.png"
+            alt="All Time Travel — award recognition 2023"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: second award recognition 2023">
+          <img
+            src="assets/img/awards/2023%20V2.png"
+            alt="All Time Travel — second award recognition 2023"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: award recognition 2024">
+          <img
+            src="assets/img/awards/2024.png"
+            alt="All Time Travel — award recognition 2024"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: international award recognition 2025">
+          <img
+            src="assets/img/awards/2025%20International.png"
+            alt="All Time Travel — international award recognition 2025"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+        <button type="button" class="award-thumb" aria-label="View full size: local award recognition 2025">
+          <img
+            src="assets/img/awards/2025%20Local.jfif"
+            alt="All Time Travel — local award recognition 2025"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
       </section>
+
+      <dialog id="award-lightbox" class="award-lightbox" aria-label="Award full size image">
+        <div class="award-lightbox-scrim">
+          <button type="button" class="award-lightbox-close" aria-label="Close full size image">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+          <img class="award-lightbox-img" alt="" decoding="async" />
+        </div>
+      </dialog>
+      <script>
+        (function () {
+          var dialog = document.getElementById("award-lightbox");
+          if (!dialog || typeof dialog.showModal !== "function") return;
+          var scrim = dialog.querySelector(".award-lightbox-scrim");
+          var fullImg = dialog.querySelector(".award-lightbox-img");
+          var closeBtn = dialog.querySelector(".award-lightbox-close");
+          function openFromThumb(btn) {
+            var img = btn.querySelector("img");
+            if (!img) return;
+            fullImg.src = img.currentSrc || img.src;
+            fullImg.alt = img.alt;
+            dialog.showModal();
+          }
+          function closeLightbox() {
+            dialog.close();
+          }
+          document.querySelectorAll(".award-gallery .award-thumb").forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              openFromThumb(btn);
+            });
+          });
+          closeBtn.addEventListener("click", closeLightbox);
+          scrim.addEventListener("click", function (e) {
+            if (e.target === scrim) closeLightbox();
+          });
+          dialog.addEventListener("close", function () {
+            fullImg.removeAttribute("src");
+            fullImg.alt = "";
+          });
+        })();
+      </script>
 
       <div class="section-title">
         <h2>Business Highlights</h2>
