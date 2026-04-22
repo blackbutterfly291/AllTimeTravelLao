@@ -724,6 +724,10 @@ footer{
   margin: 0 0 12px;
 }
 
+.company-gallery .award-thumb{
+  display: block;
+}
+
 .company-hero-logo,
 .company-gallery img{
   width: 100%;
@@ -761,7 +765,7 @@ footer{
 }
 
 .company-gallery img.company-gallery-img--full{
-  justify-self: center;
+  margin-inline: auto;
   width: auto;
   max-width: min(480px, 92%);
   height: auto;
@@ -774,6 +778,11 @@ footer{
 }
 
 .company-gallery img:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 20px 36px rgba(20,42,86,.22);
+}
+
+.company-gallery .award-thumb:hover img{
   transform: translateY(-3px);
   box-shadow: 0 20px 36px rgba(20,42,86,.22);
 }
