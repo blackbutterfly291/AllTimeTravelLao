@@ -851,19 +851,25 @@ footer{
   box-shadow: 0 20px 36px rgba(20,42,86,.22);
 }
 
-/* Company gallery — uniform tiles (e.g. International Interactions): overrides .award-thumb img height:auto */
+/* Company gallery — uniform tiles (e.g. International Interactions): same cell size; img fills tile */
 .company-gallery--uniform .award-thumb{
+  display: block;
+  position: relative;
+  width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 18px;
 }
 
 .company-gallery--uniform .award-thumb img{
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 0;
+  margin: 0;
   object-fit: cover;
   object-position: center;
+  border-radius: 0;
 }
 
 /* Full-size award lightbox */
