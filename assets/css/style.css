@@ -541,12 +541,34 @@ main{
 
 .contact-item{
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
   padding: 14px;
   border-radius: 18px;
   border: 1px solid rgba(19,31,55,.06);
   background: #ffffff;
+}
+
+.contact-item-icon{
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(19,31,55,.06);
+  background: #f4f7ff;
+  display: grid;
+  place-items: center;
+  color: var(--brand-2);
+  font-size: 18px;
+}
+
+.contact-item-body{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .contact-label{
